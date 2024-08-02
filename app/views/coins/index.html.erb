@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+<%= data_br(Date.today) %>
+<h1>Coins</h1>
+
+<div id="coins">
+  <% @coins.each do |coin| %>
+    <%= render coin %>
+    <p>
+      <%= link_to "Mostrar essa moeda", coin %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Nova moeda", new_coin_path %>

@@ -1,0 +1,20 @@
+<h1>Seja Bem vindo</h1>
+<p>Ricardo Lins</p>
+<p><%= nomeapplication %></p>
+
+<p> A soma é: <%= 1+ 1 =%></p>
+<p>Seu nome de trás para frente é: <%= "Ricardo".reverse=%></p>
+<% ax = "minha variável a" %>
+<p>Essa é a variável a: <%=ax %></p>
+<p><strong>A data de hj é: </strong><%= data_br(Date.today) %></p>
+
+<h2>Links</h2>
+ <%= render 'menu' %>
+
+<p>Você está em ambiente de <strong><%=ambiente_rails %></strong></p>
+
+<p>
+    Variável de instancia/sessão de nome <%=@nome %>
+</p>
+<p>Variável de instancia/sessão de curso <strong> <%=@curso %>  </p>
+<p>Variável do params é <%= @meu_nome %></p>
